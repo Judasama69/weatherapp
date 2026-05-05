@@ -200,7 +200,7 @@ if (isset($rawData['error'])) {
                 placeholder="Enter city name..."
                 value=""
             >
-            <button type="submit">Search</button>
+            <button type="submit">Search...</button>
         </form>
 
         <?php if ($error): ?>

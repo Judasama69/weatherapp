@@ -50,7 +50,7 @@ if (isset($rawData['error'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App - API Integration Example</title>
+    <title>Weather App</title>
     <style>
         * {
             margin: 0;

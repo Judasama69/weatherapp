@@ -3,7 +3,7 @@
   "description": "Simple Weather App with API Integration",
   "type": "project",
   "require": {
-    "php": "^8.4",
+    "php": "^8  .4",
     "guzzlehttp/guzzle": "^7.0",
     "vlucas/phpdotenv": "^5.4"
   },

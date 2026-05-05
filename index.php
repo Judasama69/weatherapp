@@ -62,7 +62,7 @@ if (isset($rawData['error'])) {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 16px;
         }
 
         .container {
@@ -136,13 +136,14 @@ if (isset($rawData['error'])) {
         }
 
         .city-name {
-            font-size: 32px;
+            font-size: clamp(22px, 5vw, 32px);
             font-weight: bold;
             margin-bottom: 10px;
+            line-height: 1.15;
         }
 
         .temperature {
-            font-size: 64px;
+            font-size: clamp(44px, 10vw, 64px);
             font-weight: bold;
             margin: 20px 0;
         }
@@ -151,6 +152,37 @@ if (isset($rawData['error'])) {
             font-size: 18px;
             text-transform: capitalize;
             opacity: 0.9;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 18px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 22px;
+                margin-bottom: 16px;
+            }
+
+            .search-box {
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 16px;
+            }
+
+            .search-box button {
+                width: 100%;
+            }
+
+            .weather-card {
+                padding: 18px;
+                border-radius: 14px;
+            }
         }
     </style>
 </head>

@@ -25,8 +25,6 @@ class Config
     private function loadEnv()
     {
         $projectRoot = realpath(__DIR__ . '/../../') ?: (__DIR__ . '/../../');
-
-        // Don't hard-fail if .env is missing; allow real environment variables too.
         $dotenv = Dotenv::createImmutable($projectRoot);
         $dotenv->safeLoad();
 
@@ -48,4 +46,4 @@ class Config
         return $this->env;
     }
 }
-?>
+

@@ -32,7 +32,7 @@ class Config
             'api_key' => $_ENV['API_KEY'] ?? $_SERVER['API_KEY'] ?? '',
             'api_base_url' => $_ENV['API_BASE_URL'] ?? $_SERVER['API_BASE_URL'] ?? 'https://api.openweathermap.org/data/2.5',
             'debug' => filter_var($_ENV['APP_DEBUG'] ?? $_SERVER['APP_DEBUG'] ?? false, FILTER_VALIDATE_BOOL),
-            'default_city' => $_ENV['DEFAULT_CITY'] ?? $_SERVER['DEFAULT_CITY'] ?? 'Manila',
+            'default_city' => $_ENV['DEFAULT_CITY'] ?? $_SERVER['DEFAULT_CITY'] ?? 'Bais',
         ];
     }
 

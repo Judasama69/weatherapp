@@ -1,6 +1,8 @@
 <?php
 
 require_once 'vendor/autoload.php';
+require_once __DIR__ . '/app/Config/Config.php';
+require_once __DIR__ . '/app/Services/WeatherService.php';
 
 use App\Config\Config;
 use App\Services\WeatherService;
@@ -15,9 +17,10 @@ $weatherService = new WeatherService(
 
 $weather = null;
 $error = null;
+$requestMethod = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 
 // Let the user choose a city; keep the input cleared on refresh (Post/Redirect/Get).
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['city'])) {
+if ($requestMethod === 'POST' && isset($_POST['city'])) {
     $submittedCity = trim((string) $_POST['city']);
     if ($submittedCity === '') {
         $_SESSION['flash_error'] = 'Please enter a city name';

@@ -205,7 +205,7 @@ if (isset($rawData['error'])) {
 
         <?php if ($error): ?>
             <div class="error">
-                ⚠️ <?php echo htmlspecialchars($error); ?>
+                error <?php echo htmlspecialchars($error); ?>
             </div>
         <?php endif; ?>
 

@@ -191,7 +191,7 @@ if (isset($rawData['error'])) {
 </head>
 <body>
     <div class="container">
-        <h1>Weather</h1>
+        <h1>check the weather in your city</h1>
 
         <form method="POST" class="search-box">
             <input
@@ -200,7 +200,7 @@ if (isset($rawData['error'])) {
                 placeholder="Enter city name..."
                 value=""
             >
-            <button type="submit">Search...</button>
+            <button type="submit">Search</button>
         </form>
 
         <?php if ($error): ?>
@@ -221,4 +221,6 @@ if (isset($rawData['error'])) {
         <?php endif; ?>
     </div>
 </body>
+
+<footer>Made by kenjie</footer>
 </html>

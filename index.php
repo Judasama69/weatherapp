@@ -221,6 +221,4 @@ if (isset($rawData['error'])) {
         <?php endif; ?>
     </div>
 </body>
-
-<footer>Made by kenjie</footer>
 </html>
